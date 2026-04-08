@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💼 Job Portal - moekyawaung-tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💼 Job Portal</h1>
+            <p>Find Your Dream Job in Myanmar & Global</p>
+        </header>
+
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Job title, company...">
+            <select id="category">
+                <option value="">All Categories</option>
+                <option value="tech">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="design">Design</option>
+            </select>
+        </div>
+
+        <div class="job-list" id="jobList"></div>
+
+        <div class="modal" id="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">×</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalCompany"></p>
+                <p id="modalDesc"></p>
+                <button onclick="applyJob()">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</ht
+ml>
